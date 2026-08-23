@@ -3,374 +3,563 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Real Bilz — Strategic web design, UI/UX optimization and digital solutions helping businesses build authority and increase revenue.">
-  <title>The Real Bilz | Web Design & Digital Strategy</title>
-  <link rel="stylesheet" href="therealbilz.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Bilz Stack — Strategic web design, CRO and digital marketing helping eCommerce brands build authority and increase revenue.">
+  <title>Bilz Stack | Web Design & CRO Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- NAV -->
   <header class="nav-wrapper">
-    <nav>
-      <img src="assets/logo.png" alt="The Real Bilz Logo" class="logo">
-      <div class="nav-links">
+    <nav id="mainNav">
+      <div class="nav-logo">
+        <img src="assets/logo.png" alt="Bilz Stack" class="logo">
+        <span class="nav-brand">Bilz<span>Stack</span></span>
+      </div>
+      <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
-        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#results">Results</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="nav-socials">
-        <a href="https://www.linkedin.com/in/okende-bilal-8105b73aa/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.instagram.com/thereal_bilz" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/2347040472936" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://pin.it/28S9qHCy3" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+      <div class="nav-right">
+        <div class="nav-socials">
+          <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+        <a href="#contact" class="nav-cta">Get Started</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <!-- HAMBURGER BUTTON — only shows on mobile -->
-    <button class="hamburger" id="hamburger" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </nav>
-</header>
-
-<!-- MOBILE SLIDE-OUT MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <div class="mobile-menu-inner">
-
-    <div class="mobile-menu-links">
-      <a href="#home" class="mobile-link">Home</a>
-      <a href="#services" class="mobile-link">Services</a>
-      <a href="#about" class="mobile-link">About</a>
-      <a href="#contact" class="mobile-link">Contact</a>
-    </div>
-
-    <div class="mobile-menu-socials">
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/27XXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="https://www.pinterest.com/yourhandle" target="_blank"><i class="fab fa-pinterest-p"></i></a>
-    </div>
-
-    <p class="mobile-menu-tag"> Web Design & Digital Strategy</p>
-  </div>
-</div>
-
-<!-- OVERLAY -->
-<div class="menu-overlay" id="menuOverlay"></div>
     </nav>
   </header>
 
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-links">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#how-it-works" class="mobile-link">How It Works</a>
+        <a href="#results" class="mobile-link">Results</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+      <div class="mobile-menu-socials">
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+      </div>
+      <a href="#contact" class="btn mobile-cta mobile-link">Book a Free Audit</a>
+      <p class="mobile-menu-tag">✦ Turning Traffic Into Revenue</p>
+    </div>
+  </div>
+  <div class="menu-overlay" id="menuOverlay"></div>
+
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay">
-      <p class="hero-tag"> Web Design & Digital Strategy</p>
-      <h1>
-  <span class="static-text">Build Authority</span>
-  
-  <span id="rotating-text">Increase Revenue.</span>
-</h1>
-      <p class="hero-sub">Strategic UI/UX design, custom industry solutions, and performance optimization designed to streamline your operations and accelerate conversions.</p>
-      <div class="hero-btns">
-        <a href="#contact" class="btn">Get Started</a>
-        <a href="#services" class="btn btn-outline">View Services</a>
+    <div class="hero-content">
+      <div class="hero-badge reveal">✦ Web Design & CRO Agency</div>
+      <h1 class="reveal">
+        We turn your website into a<br>
+        <span id="rotating-text">revenue machine.</span>
+      </h1>
+      <p class="hero-sub reveal">Bilz Stack plans, builds and optimises high-converting websites and eCommerce stores for brands ready to scale. One team, clear results, measurable growth.</p>
+      <div class="hero-btns reveal">
+        <a href="#contact" class="btn">Book a Free Audit</a>
+        <a href="#services" class="btn btn-outline">See What We Do</a>
+      </div>
+      <div class="hero-trust reveal">
+        <span><i class="fas fa-check-circle"></i> No contracts</span>
+        <span><i class="fas fa-check-circle"></i> Results in 30 days</span>
+        <span><i class="fas fa-check-circle"></i> Free audit included</span>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="hero-card-title">Conversion Dashboard</span>
+        </div>
+        <div class="hero-stats-grid">
+          <div class="hero-stat">
+            <span class="stat-val">+164%</span>
+            <span class="stat-label">Revenue Growth</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-val">4.9x</span>
+            <span class="stat-label">ROAS</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-val">-38%</span>
+            <span class="stat-label">Bounce Rate</span>
+          </div>
+          <div class="hero-stat">
+            <span class="stat-val">5.2x</span>
+            <span class="stat-label">Conversion Lift</span>
+          </div>
+        </div>
+        <div class="hero-bar-wrap">
+          <div class="hero-bar-label"><span>Before Bilz Stack</span><span>24%</span></div>
+          <div class="hero-bar"><div class="hero-bar-fill low"></div></div>
+          <div class="hero-bar-label"><span>After Bilz Stack</span><span>88%</span></div>
+          <div class="hero-bar"><div class="hero-bar-fill high"></div></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- HIGHLIGHT BANNER -->
-  <section class="highlight reveal">
-    <p>Trusted by growing brands • Built for performance • Designed for conversion</p>
-  </section>
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Website Design</span>
+      <span class="ticker-dot">✦</span>
+      <span>CRO Audits</span>
+      <span class="ticker-dot">✦</span>
+      <span>Shopify Optimisation</span>
+      <span class="ticker-dot">✦</span>
+      <span>UI/UX Design</span>
+      <span class="ticker-dot">✦</span>
+      <span>Sales Funnels</span>
+      <span class="ticker-dot">✦</span>
+      <span>Performance SEO</span>
+      <span class="ticker-dot">✦</span>
+      <span>Google Ads</span>
+      <span class="ticker-dot">✦</span>
+      <span>Meta Ads</span>
+      <span class="ticker-dot">✦</span>
+      <span>Email Marketing</span>
+      <span class="ticker-dot">✦</span>
+      <span>Website Design</span>
+      <span class="ticker-dot">✦</span>
+      <span>CRO Audits</span>
+      <span class="ticker-dot">✦</span>
+      <span>Shopify Optimisation</span>
+      <span class="ticker-dot">✦</span>
+      <span>UI/UX Design</span>
+      <span class="ticker-dot">✦</span>
+      <span>Sales Funnels</span>
+      <span class="ticker-dot">✦</span>
+      <span>Performance SEO</span>
+      <span class="ticker-dot">✦</span>
+      <span>Google Ads</span>
+      <span class="ticker-dot">✦</span>
+      <span>Meta Ads</span>
+      <span class="ticker-dot">✦</span>
+      <span>Email Marketing</span>
+      <span class="ticker-dot">✦</span>
+    </div>
+  </div>
 
   <!-- SERVICES -->
   <section id="services" class="services">
-    <h2 class="reveal">Our Services</h2>
-    <div class="services-container">
-
-      <div class="service-box reveal reveal-delay-1">
-        <h3>Website Design</h3>
-        <p>Modern, conversion-focused websites tailored to your brand.</p>
+    <div class="section-inner">
+      <div class="section-label reveal">What We Do</div>
+      <h2 class="reveal">Every channel, one growth plan.</h2>
+      <p class="section-sub reveal">We handle the full digital stack — from your website to your ads — so you can focus on running your business.</p>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Website Design</h3>
+          <p>Modern, conversion-focused websites built to turn visitors into paying customers.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>CRO Audits</h3>
+          <p>We find exactly where your store is leaking revenue and fix it fast.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><i class="fab fa-shopify"></i></div>
+          <h3>Shopify Optimisation</h3>
+          <p>Speed, UX and conversion improvements for Shopify stores ready to scale.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Paid Advertising</h3>
+          <p>Google Ads and Meta campaigns built around your margins, not just clicks.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon"><i class="fas fa-funnel-dollar"></i></div>
+          <h3>Sales Funnels</h3>
+          <p>Structured flows that guide your leads from first touch to checkout.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <h3>Performance SEO</h3>
+          <p>Technical and content SEO that builds long-term organic revenue.</p>
+        </div>
       </div>
-
-      <div class="service-box reveal reveal-delay-2">
-        <h3>Website Development</h3>
-        <p>Clean, fast, and scalable code built to bring your design to life.</p>
-      </div>
-
-      <div class="service-box reveal reveal-delay-3">
-        <h3>UI/UX Optimization</h3>
-        <p>Improving user experience to increase engagement and retention.</p>
-      </div>
-
-      <div class="service-box reveal reveal-delay-4">
-        <h3>Sales Funnels</h3>
-        <p>Structured flows that turn visitors into paying customers.</p>
-      </div>
-
-      <div class="service-box reveal reveal-delay-1">
-        <h3>Automation</h3>
-        <p>Streamlining your business processes for efficiency and scale.</p>
-      </div>
-
-      <div class="service-box reveal reveal-delay-2">
-        <h3>Industry Solutions</h3>
-        <p>Custom builds for solar, hospitality, ecommerce & more.</p>
-      </div>
-
-      <div class="service-box reveal reveal-delay-3">
-        <h3>Performance Optimization</h3>
-        <p>Speed, SEO, and technical improvements for better results.</p>
-      </div>
-
     </div>
   </section>
 
-<!-- WHY US -->
+  <!-- STATS -->
+  <section class="stats">
+    <div class="section-inner">
+      <div class="stats-grid">
+        <div class="stat-block reveal reveal-delay-1">
+          <span class="stat-number">50+</span>
+          <span class="stat-desc">Websites Built</span>
+        </div>
+        <div class="stat-block reveal reveal-delay-2">
+          <span class="stat-number">4.9x</span>
+          <span class="stat-desc">Average ROAS</span>
+        </div>
+        <div class="stat-block reveal reveal-delay-3">
+          <span class="stat-number">+164%</span>
+          <span class="stat-desc">Avg Revenue Increase</span>
+        </div>
+        <div class="stat-block reveal reveal-delay-4">
+          <span class="stat-number">98%</span>
+          <span class="stat-desc">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
   <section class="why-us">
-    <h2 class="reveal">Results-Driven Web Design Experts</h2>
-    <p class="reveal reveal-delay-1">The Real Bilz is a performance-focused web design brand dedicated to helping businesses build authority and grow revenue through strategic digital solutions.</p>
-
-    <div class="why-us-container">
-
-      <div class="why-box reveal reveal-delay-1">
-        <div class="why-icon"><i class="fas fa-bullseye"></i></div>
-        <h3>Revenue-Focused</h3>
-        <p>Every design decision is made to drive measurable business growth.</p>
+    <div class="section-inner">
+      <div class="section-label reveal">Why Bilz Stack</div>
+      <h2 class="reveal">Why brands choose us.</h2>
+      <div class="why-grid">
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Transparent Reporting</h3>
+          <p>Clear dashboards and weekly reports so you always know where your money is going.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon"><i class="fas fa-store"></i></div>
+          <h3>eCommerce Only</h3>
+          <p>We work exclusively with online stores — no generalists, just specialists.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-icon"><i class="fas fa-dollar-sign"></i></div>
+          <h3>Revenue-Accountable</h3>
+          <p>We tie our work to your bottom line, not vanity metrics like impressions or clicks.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-4">
+          <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>One Team, All Channels</h3>
+          <p>Design, ads, SEO and CRO under one roof — no juggling multiple agencies.</p>
+        </div>
       </div>
-
-      <div class="why-box reveal reveal-delay-2">
-        <div class="why-icon"><i class="fas fa-chart-line"></i></div>
-        <h3>Data-Driven</h3>
-        <p>Decisions backed by performance metrics and conversion data.</p>
-      </div>
-
-      <div class="why-box reveal reveal-delay-3">
-        <div class="why-icon"><i class="fas fa-users"></i></div>
-        <h3>Scalable Systems</h3>
-        <p>Build digital systems that grow with your business.</p>
-      </div>
-
-      <div class="why-box reveal reveal-delay-4">
-        <div class="why-icon"><i class="fas fa-trophy"></i></div>
-        <h3>Proven Results</h3>
-        <p>Track record of success across multiple industries.</p>
-      </div>
-
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2 class="reveal">About The Real Bilz</h2>
-    <img src="assets/about.jpg" alt="The Real Bilz" class="about-img reveal">
-    <p class="reveal reveal-delay-1">
-      Built on real experience in eCommerce and digital growth, The Real Bilz has helped businesses turn ordinary websites into high-performing assets that drive authority, attract clients, and increase revenue.
-
-Every strategy is rooted in data, user behavior, and proven conversion principles. No guesswork. Just systems designed with one goal in mind—real business growth.
-    </p>
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="section-inner">
+      <div class="section-label reveal">The Process</div>
+      <h2 class="reveal">How it works.</h2>
+      <p class="section-sub reveal">From first conversation to measurable results — here's exactly what working with Bilz Stack looks like.</p>
+      <div class="steps-grid">
+        <div class="step reveal reveal-delay-1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Free Audit</h3>
+            <p>We analyse your website, ads and funnel to identify the highest-impact growth opportunities — completely free, no strings attached.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Growth Plan</h3>
+            <p>We build a prioritised roadmap tailored to your store, your margins and your goals. You approve everything before we touch a thing.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal-delay-3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Launch</h3>
+            <p>Our team executes fast. Design, development, ads and SEO — all moving in parallel so you see results within the first 30 days.</p>
+          </div>
+        </div>
+        <div class="step reveal reveal-delay-4">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Grow</h3>
+            <p>We monitor, optimise and scale continuously. Monthly reporting keeps you in the loop and quarterly reviews keep the strategy sharp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  
+  <!-- CASE STUDIES -->
+  <section id="results" class="results">
+    <div class="section-inner">
+      <div class="section-label reveal">Real Results</div>
+      <h2 class="reveal">Real brands. Real numbers.</h2>
+      <p class="section-sub reveal">Every project starts with a clear goal and ends with a measurable outcome.</p>
+      <div class="results-grid">
+        <div class="result-card reveal reveal-delay-1">
+          <div class="result-img placeholder-img">
+            <div class="placeholder-content"><i class="fas fa-store"></i><span>Fashion Brand</span></div>
+          </div>
+          <div class="result-info">
+            <span class="result-tag">Shopify Redesign + CRO</span>
+            <h3>Fashion eCommerce Store</h3>
+            <p>Full Shopify redesign with conversion rate optimisation. Checkout flow rebuilt from scratch.</p>
+            <div class="result-metrics">
+              <div class="result-metric"><span class="metric-val">+187%</span><span class="metric-label">Revenue</span></div>
+              <div class="result-metric"><span class="metric-val">3.2x</span><span class="metric-label">ROAS</span></div>
+              <div class="result-metric"><span class="metric-val">-41%</span><span class="metric-label">Bounce Rate</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-card reveal reveal-delay-2">
+          <div class="result-img placeholder-img two">
+            <div class="placeholder-content"><i class="fas fa-spa"></i><span>Beauty Brand</span></div>
+          </div>
+          <div class="result-info">
+            <span class="result-tag">Paid Ads + Landing Pages</span>
+            <h3>Beauty & Wellness Brand</h3>
+            <p>Google and Meta ad campaigns paired with dedicated landing pages for each product line.</p>
+            <div class="result-metrics">
+              <div class="result-metric"><span class="metric-val">5.4x</span><span class="metric-label">ROAS</span></div>
+              <div class="result-metric"><span class="metric-val">+220%</span><span class="metric-label">Sales</span></div>
+              <div class="result-metric"><span class="metric-val">-29%</span><span class="metric-label">CPA</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-card reveal reveal-delay-3">
+          <div class="result-img placeholder-img three">
+            <div class="placeholder-content"><i class="fas fa-tshirt"></i><span>Apparel Brand</span></div>
+          </div>
+          <div class="result-info">
+            <span class="result-tag">SEO + Website Design</span>
+            <h3>Men's Apparel Store</h3>
+            <p>Full website rebuild with SEO foundation. Organic traffic grew from near zero to consistent daily sales.</p>
+            <div class="result-metrics">
+              <div class="result-metric"><span class="metric-val">+340%</span><span class="metric-label">Organic Traffic</span></div>
+              <div class="result-metric"><span class="metric-val">4.1x</span><span class="metric-label">Revenue</span></div>
+              <div class="result-metric"><span class="metric-val">Top 3</span><span class="metric-label">Google Rank</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-inner">
+      <div class="section-label reveal">What Clients Say</div>
+      <h2 class="reveal">Trusted by growing brands.</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p>"Bilz Stack completely transformed our Shopify store. Within 6 weeks our conversion rate doubled and we hit our best revenue month ever."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <strong>James M.</strong>
+              <span>Founder, Fashion eCommerce</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="stars">★★★★★</div>
+          <p>"The audit alone was worth it. They found issues we didn't even know existed. Now our Google Ads are finally profitable and scaling."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SA</div>
+            <div>
+              <strong>Sarah A.</strong>
+              <span>CEO, Beauty Brand</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="stars">★★★★★</div>
+          <p>"Professional, fast and results-driven. They built our entire website and set up our funnels. We went from £0 to £12k/month in 90 days."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div>
+              <strong>David K.</strong>
+              <span>Owner, Apparel Store</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="section-inner">
+      <div class="cta-inner reveal">
+        <div class="section-label light">Ready to scale?</div>
+        <h2>Stop leaving revenue on the table.</h2>
+        <p>Book a free audit and we'll show you exactly where your store is losing money and how to fix it — no obligation, no fluff.</p>
+        <div class="cta-btns">
+          <a href="#contact" class="btn btn-white">Book a Free Audit</a>
+          <a href="#services" class="btn btn-outline-white">See Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
-    <h2 class="reveal">Ready to Scale Your Brand?</h2>
-    <p class="reveal reveal-delay-1">Let's discuss how we can help you achieve your business goals.</p>
-
-    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" netlify-honeypot="bot-field">
-  <input type="hidden" name="form-name" value="contact">
-  <input type="hidden" name="bot-field"> <!-- spam protection -->
-  <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
-  <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
-  <textarea name="message" placeholder="Your Message" autocomplete="off" required></textarea>
-  <button type="submit" class="btn">Book a free consultation</button>
-</form>
+    <div class="section-inner contact-inner">
+      <div class="contact-left reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2>Let's grow your store.</h2>
+        <p>Tell us about your business and we'll come back to you within 24 hours with a plan.</p>
+        <div class="contact-points">
+          <div class="contact-point"><i class="fas fa-envelope"></i><span>therealbilz.io@gmail.com</span></div>
+          <div class="contact-point"><i class="fab fa-whatsapp"></i><span>Chat on WhatsApp</span></div>
+          <div class="contact-point"><i class="fas fa-clock"></i><span>Response within 24 hours</span></div>
+        </div>
+      </div>
+      <div class="contact-right reveal reveal-delay-2">
+        <form name="contact" method="POST" data-netlify="true" action="/thank-you.html" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="bot-field">
+          <input type="text" name="name" placeholder="Your Name" autocomplete="name" required>
+          <input type="email" name="email" placeholder="Your Email" autocomplete="email" required>
+          <input type="text" name="website" placeholder="Your Website URL" autocomplete="off">
+          <textarea name="message" placeholder="Tell us about your store and goals" autocomplete="off" required></textarea>
+          <button type="submit" class="btn full-width">Book a Free Audit</button>
+        </form>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-container">
-
-      <div class="footer-col">
-        <h3 class="footer-brand">The Real Bilz</h3>
-        <p>Build Authority. Increase Revenue.<br>Helping brands grow through high-performing web design.</p>
-        <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/okende-bilal-8105b73aa/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://wa.me/2347040472936" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/thereal_bilz" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://pin.it/28S9qHCy3" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <img src="assets/logo.png" alt="Bilz Stack" class="logo">
+            <span class="footer-brand-name">Bilz<span>Stack</span></span>
+          </div>
+          <p>Turning traffic into revenue for eCommerce brands ready to scale.</p>
+          <div class="footer-socials">
+            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Website Design</a></li>
+            <li><a href="#services">CRO Audits</a></li>
+            <li><a href="#services">Shopify Optimisation</a></li>
+            <li><a href="#services">Paid Advertising</a></li>
+            <li><a href="#services">Sales Funnels</a></li>
+            <li><a href="#services">Performance SEO</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> therealbilz.io@gmail.com</li>
+            <li><i class="fab fa-whatsapp"></i> Chat on WhatsApp</li>
+            <li><i class="fas fa-map-marker-alt"></i> Poole, Dorset, UK</li>
+          </ul>
         </div>
       </div>
-
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Website Design</a></li>
-          <li><a href="#services">Website Development</a></li>
-          <li><a href="#services">UI/UX Optimization</a></li>
-          <li><a href="#services">Sales Funnels</a></li>
-          <li><a href="#services">Automation</a></li>
-          <li><a href="#services">Performance Optimization</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>© 2026 Bilz Stack. All rights reserved. Built for brands that refuse to settle.</p>
+        <p>Registered in England & Wales · Greecoo Ltd · Co. 15499639</p>
       </div>
-
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li><i class="fas fa-envelope"></i> therealbilz.io@gmail.com</li>
-          <li><i class="fab fa-whatsapp"></i> Chat on WhatsApp</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 The Real Bilz. All rights reserved. Built for brands that refuse to settle.</p>
     </div>
   </footer>
 
-  <!-- SCRIPTS -->
-<script>
-  const heroBg = document.querySelector('.hero-bg');
-  const nav = document.querySelector('nav');
-  const navLinks = nav.querySelectorAll('a');
-  const whyUs = document.querySelector('.why-us');
-  const contact = document.querySelector('.contact');
-  const rotatingEl = document.getElementById('rotating-text');
+  <!-- MOBILE MENU + PARALLAX SCRIPTS -->
+  <script>
+    // NAV
+    const nav = document.getElementById('mainNav');
+    const navLinks = nav.querySelectorAll('a');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  // ROTATING TEXT — no "Build Authority" here since it's static above
-  const phrases = [
-    'Increase Revenue.',
-    'Drive Conversions.',
-    'Scale Your Brand.',
-    'Dominate Online.',
-    'Grow Your Business.'
-  ];
-  let currentIndex = 0;
-
-  function rotateText() {
-    rotatingEl.classList.remove('slide-in');
-    rotatingEl.classList.add('slide-out');
-
-    setTimeout(() => {
-      currentIndex = (currentIndex + 1) % phrases.length;
-      rotatingEl.textContent = phrases[currentIndex];
-      rotatingEl.classList.remove('slide-out');
-      rotatingEl.classList.add('slide-in');
-    }, 420);
-  }
-
-  // RUN ONCE ON LOAD THEN REPEAT
-  rotatingEl.classList.add('slide-in');
-  setInterval(rotateText, 2800);
-
-  // SCROLL EVENTS
-  window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-
-    // AMBIENT ZOOM PARALLAX
-    const zoomScale = 1 + scrollY * 0.0003;
-    heroBg.style.transform = `scale(${zoomScale}) translateY(${scrollY * 0.15}px)`;
-
-    // NAV COLOR SWITCH
-    const whyUsTop = whyUs.offsetTop;
-    const whyUsBottom = whyUsTop + whyUs.offsetHeight;
-    const contactTop = contact.offsetTop;
-    const contactBottom = contactTop + contact.offsetHeight;
-
-    const isOnDarkSection =
-      scrollY < window.innerHeight * 0.7 ||
-      (scrollY >= whyUsTop - 80 && scrollY < whyUsBottom - 80) ||
-      (scrollY >= contactTop - 80 && scrollY < contactBottom - 80);
-
-    if (isOnDarkSection) {
-      nav.style.background = 'rgba(255, 255, 255, 0.15)';
-      nav.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-      navLinks.forEach(a => a.style.color = '#ffffff');
-    } else {
-      nav.style.background = 'rgba(255, 255, 255, 0.17)';
-      nav.style.borderColor = 'rgba(91, 44, 255, 0.15)';
-      navLinks.forEach(a => a.style.color = '#111111');
+    function openMenu() {
+      hamburger.classList.add('active');
+      mobileMenu.classList.add('open');
+      menuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
     }
 
-    // SECTION REVEAL
-    document.querySelectorAll('.reveal').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight * 0.88) {
-        el.classList.add('visible');
-      }
+    function closeMenu() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      menuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
     });
-  });
-  // HAMBURGER MENU
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const menuOverlay = document.getElementById('menuOverlay');
-  const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  // HAMBURGER COLOR SWITCH
-    const whyUsTop = whyUs.offsetTop;
-    const whyUsBottom = whyUsTop + whyUs.offsetHeight;
-    const contactTop = contact.offsetTop;
-    const contactBottom = contactTop + contact.offsetHeight;
+    menuOverlay.addEventListener('click', closeMenu);
+    mobileLinks.forEach(l => l.addEventListener('click', closeMenu));
 
-    const isOnDarkSection =
-      scrollY < window.innerHeight * 0.7 ||
-      (scrollY >= whyUsTop - 80 && scrollY < whyUsBottom - 80) ||
-      (scrollY >= contactTop - 80 && scrollY < contactBottom - 80);
+    // ROTATING TEXT
+    const phrases = ['revenue machine.', 'conversion engine.', 'growth system.', 'competitive edge.', 'best asset.'];
+    let idx = 0;
+    const rotEl = document.getElementById('rotating-text');
 
-    if (isOnDarkSection) {
-      nav.style.background = 'rgba(255, 255, 255, 0.15)';
-      nav.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-      navLinks.forEach(a => a.style.color = '#ffffff');
-    } else {
-      nav.style.background = 'rgba(255, 255, 255, 0.17)';
-      nav.style.borderColor = 'rgba(91, 44, 255, 0.15)';
-      navLinks.forEach(a => a.style.color = '#111111');
+    function rotateText() {
+      rotEl.classList.add('slide-out');
+      setTimeout(() => {
+        idx = (idx + 1) % phrases.length;
+        rotEl.textContent = phrases[idx];
+        rotEl.classList.remove('slide-out');
+        rotEl.classList.add('slide-in');
+        setTimeout(() => rotEl.classList.remove('slide-in'), 500);
+      }, 400);
     }
-  function openMenu() {
-    hamburger.classList.add('active');
-    mobileMenu.classList.add('open');
-    menuOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
 
-  function closeMenu() {
-    hamburger.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    menuOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-  }
+    rotEl.classList.add('slide-in');
+    setTimeout(() => rotEl.classList.remove('slide-in'), 500);
+    setInterval(rotateText, 3000);
 
-  hamburger.addEventListener('click', () => {
-    if (mobileMenu.classList.contains('open')) {
-      closeMenu();
-    } else {
-      openMenu();
-    }
-  });
+    // NAV SCROLL BEHAVIOR
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
 
-  // CLOSE WHEN OVERLAY CLICKED
-  menuOverlay.addEventListener('click', closeMenu);
+      if (scrollY > 80) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
 
-  // CLOSE WHEN LINK CLICKED
-  mobileLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-</script>
+      // REVEAL
+      document.querySelectorAll('.reveal').forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight * 0.88) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // ANIMATE BARS ON LOAD
+    setTimeout(() => {
+      document.querySelectorAll('.hero-bar-fill').forEach(b => b.classList.add('animated'));
+    }, 800);
+  </script>
 
 </body>
 </html>
