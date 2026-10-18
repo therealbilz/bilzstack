@@ -6,6 +6,7 @@
   <meta name="description" content="Bilz Stack — Strategic web design, CRO and digital marketing helping eCommerce brands build authority and increase revenue.">
   <title>Bilz Stack | Web Design & CRO Agency</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="therealbilz.css">
@@ -582,7 +583,20 @@
     rotEl.classList.add('slide-in');
     setTimeout(() => rotEl.classList.remove('slide-in'), 500);
     setInterval(rotateText, 3000);
+  // REVEAL FUNCTION
+  function revealElements() {
+    document.querySelectorAll('.reveal').forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.98) {
+        el.classList.add('visible');
+      }
+    });
+  }
 
+  // RUN ON PAGE LOAD
+  revealElements();
+
+  // NAV SCROLL BEHAVIOR
+  window.addEventListener('scroll', () => {
     // NAV SCROLL BEHAVIOR
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
@@ -593,12 +607,11 @@
         nav.classList.remove('scrolled');
       }
 
-      // REVEAL
-      document.querySelectorAll('.reveal').forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight * 0.88) {
-          el.classList.add('visible');
-        }
-      });
+         // REVEAL
+    revealElements();
+  });
+
+  // ANIMATE BARS ON LOAD
     });
 
     // ANIMATE BARS ON LOAD
